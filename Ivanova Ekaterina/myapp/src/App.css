@@ -1,0 +1,97 @@
+body{
+    font-family: Candara, serif;
+    min-height: 100%;
+}
+header{
+    min-height: 10vh;
+}
+footer{
+    height: 10vh;
+}
+main{
+    min-height: 80vh;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+a{
+    text-decoration: none;
+    color: #282c34;
+}
+.menu a{
+    font-size: 1.5em;
+    margin: 10px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.pokemon{
+  font-size: 2em;
+}
+img{
+  height: 100px;
+  width: 100px;
+}
+.singlePokemon img{
+    height: 200px;
+    width: 200px;
+}
+.singlePokemon{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin: 25px;
+}
+.pokemon{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding-bottom: 2vh;
+    width: 50%;
+    margin: 2vh auto auto;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 600px) {
+    .page{
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .page{
+        grid-template-columns: auto auto;
+    }
+}
